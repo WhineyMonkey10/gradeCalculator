@@ -12,7 +12,7 @@ class Authentication:
         self.db = firebase_admin.firestore.client()
     
     def register(self, email, password):
-        
+        pass
     
     def login(self, email, password):
         pass
