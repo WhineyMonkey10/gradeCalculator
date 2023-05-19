@@ -1,0 +1,52 @@
+:root {
+    --bg-color: #333;
+    --text-color: #fff;
+    --sidebar-color: #444;
+    --stat-box-color: #555;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: var(--sidebar-color);
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.profile-button {
+    float: right;
+    border: none;
+    background: transparent;
+}
+
+.profile-dropdown {
+    display: none;
+    float: right;
+    background-color: var(--sidebar-color);
+    padding: 10px;
+}
+
+.stat-box {
+    background-color: var(--stat-box-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" id="theme-style" href="{{ url_for('static', filename='styles/dashboard_dark.css') }}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li>Classes</li>
+                <li>Grades</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="profile">
+                <button id="profile-button" class="profile-button">👤</button>
+                <div id="profile-dropdown" class="profile-dropdown">
+                    <a href="#">Manage Profile</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Average percentage</h3>
+                    <!-- You will fill in the data here -->
+                </div>
+                <div class="stat-box">
+                    <h3>Average grade</h3>
+                    <!-- You will fill in the data here -->
+                </div>
+                <div class="stat-box">
+                    <h3>Class with the highest average</h3>
+                    <!-- You will fill in the data here -->
+                </div>
+                <div class="stat-box">
+                    <h3>Class with the lowest average</h3>
+                    <!-- You will fill in the data here -->
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
